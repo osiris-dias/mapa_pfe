@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -37,7 +38,15 @@ const NoticiaDetalhe = () => {
       category: "Economia",
       author: "Carlos Santos",
       date: "14 Jun 2025",
-      content: "<p>Conteúdo detalhado sobre a recuperação da economia brasileira em 2025...</p>"
+      content: `
+        <p>Após um período de desafios, a economia brasileira começa a demonstrar sinais consistentes de recuperação em 2025. Dados recentes do Instituto Brasileiro de Geografia e Estatística (IBGE) indicam um crescimento de 0.8% no Produto Interno Bruto (PIB) no primeiro trimestre, superando as expectativas do mercado.</p>
+        <p>O setor de serviços, que representa a maior parcela da economia, foi o principal motor desse crescimento, com destaque para as áreas de turismo, tecnologia da informação e comércio varejista. A indústria também apresentou um desempenho positivo, impulsionada pela retomada da produção em setores chave como o automobilístico e o de bens de consumo duráveis.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Fatores da Recuperação</h3>
+        <p>Analistas apontam uma combinação de fatores para essa melhora, incluindo a estabilização da inflação, a queda gradual da taxa de juros e o aumento da confiança dos investidores e consumidores. As reformas estruturais implementadas nos últimos anos também começam a surtir efeito, criando um ambiente de negócios mais favorável.</p>
+        <p>Apesar dos sinais positivos, especialistas alertam para a necessidade de cautela. Desafios como o endividamento público e a volatilidade do cenário internacional ainda persistem. Manter o ritmo de crescimento exigirá a continuidade das políticas de ajuste fiscal e o fomento a investimentos em infraestrutura e inovação.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Perspectivas Futuras</h3>
+        <p>As projeções para o restante do ano são otimistas, com expectativa de um crescimento acumulado do PIB entre 2% e 2.5%. A geração de empregos também tem mostrado uma tendência de alta, embora a recuperação do mercado de trabalho ainda seja gradual. O governo federal reafirmou seu compromisso com a responsabilidade fiscal e a atração de investimentos estrangeiros para consolidar a trajetória de crescimento sustentável.</p>
+      `
     },
     3: {
       id: 3,
@@ -47,7 +56,15 @@ const NoticiaDetalhe = () => {
       category: "Meio Ambiente",
       author: "Maria Oliveira",
       date: "13 Jun 2025",
-      content: "<p>Conteúdo detalhado sobre sustentabilidade no Brasil em 2025...</p>"
+      content: `
+        <p>A pauta da sustentabilidade nunca esteve tão em evidência no Brasil como em 2025. Empresas de diversos setores e o governo federal têm intensificado investimentos em projetos que visam não apenas reduzir o impacto ambiental, mas também promover um modelo de desenvolvimento mais verde e inclusivo.</p>
+        <p>Um dos destaques é o aumento significativo no uso de energias renováveis. A capacidade instalada de energia solar e eólica cresceu mais de 40% no último ano, impulsionada por incentivos fiscais e pela crescente conscientização sobre a importância da transição energética. Grandes corporações também estão adotando metas ambiciosas de neutralidade de carbono e investindo em tecnologias limpas.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Iniciativas Governamentais e Empresariais</h3>
+        <p>O governo lançou o "Plano Nacional de Economia Circular", que incentiva a redução do desperdício, a reutilização de materiais e a reciclagem em larga escala. Além disso, programas de conservação de biomas como a Amazônia e o Cerrado foram fortalecidos, com maior fiscalização contra o desmatamento ilegal e incentivos para práticas agrícolas sustentáveis.</p>
+        <p>No setor privado, observa-se um movimento crescente de empresas buscando certificações ambientais e integrando critérios ESG (Ambiental, Social e de Governança) em suas estratégias de negócio. O mercado de crédito de carbono também está em expansão, oferecendo novas oportunidades para projetos de reflorestamento e conservação.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Conscientização e Desafios</h3>
+        <p>A conscientização da população sobre a importância da sustentabilidade também tem aumentado, refletindo-se em mudanças nos hábitos de consumo e maior pressão por práticas responsáveis. No entanto, o Brasil ainda enfrenta desafios significativos, como a necessidade de universalizar o saneamento básico e combater a exploração ilegal de recursos naturais. A transição para uma economia verdadeiramente sustentável é um processo contínuo que exige o engajamento de todos os setores da sociedade.</p>
+      `
     },
     4: {
       id: 4,
@@ -57,7 +74,15 @@ const NoticiaDetalhe = () => {
       category: "Tecnologia",
       author: "Dr. Ricardo Alves",
       date: "12 Jun 2025",
-      content: "<p>Conteúdo detalhado sobre inovações em IA em 2025...</p>"
+      content: `
+        <p>O ano de 2025 promete ser um marco para as inovações em Inteligência Artificial (IA), com avanços que devem impactar profundamente diversas áreas, desde a medicina e indústria até o entretenimento e a vida cotidiana. Especialistas do setor preveem uma aceleração na adoção de soluções baseadas em IA, impulsionada pela maior capacidade de processamento, algoritmos mais sofisticados e um volume crescente de dados disponíveis.</p>
+        <p>Na área da saúde, espera-se que a IA generativa auxilie na descoberta de novos medicamentos e tratamentos personalizados. Ferramentas de diagnóstico assistido por IA devem se tornar mais precisas e acessíveis, contribuindo para a detecção precoce de doenças. A robótica cirúrgica, guiada por IA, também tende a evoluir, permitindo procedimentos menos invasivos e com recuperação mais rápida.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">IA no Cotidiano e na Indústria</h3>
+        <p>No cotidiano, assistentes virtuais se tornarão ainda mais inteligentes e proativos, antecipando necessidades e facilitando tarefas. A personalização de conteúdo em plataformas de streaming e redes sociais atingirá novos níveis, com algoritmos capazes de entender gostos e preferências de forma mais granular. A IA também será crucial para o desenvolvimento de cidades inteligentes, otimizando o tráfego, o consumo de energia e a segurança pública.</p>
+        <p>Na indústria, a IA continuará a impulsionar a automação de processos, desde a manufatura até a logística. A manutenção preditiva, baseada em sensores e algoritmos de IA, permitirá reduzir custos e evitar falhas em equipamentos. A criação de "gêmeos digitais" (digital twins) de fábricas e produtos facilitará simulações e otimizações antes da implementação física.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Ética e Regulamentação</h3>
+        <p>Com o avanço da IA, cresce também a discussão sobre questões éticas e a necessidade de regulamentação. Temas como privacidade de dados, vieses algorítmicos e o impacto da IA no mercado de trabalho estarão no centro dos debates. A criação de diretrizes e leis para garantir o uso responsável e ético da Inteligência Artificial será fundamental para que seus benefícios sejam amplamente distribuídos pela sociedade.</p>
+      `
     },
     5: {
       id: 5,
@@ -67,7 +92,15 @@ const NoticiaDetalhe = () => {
       category: "Carreira",
       author: "Juliana Costa",
       date: "11 Jun 2025",
-      content: "<p>Conteúdo detalhado sobre os desafios do mercado de trabalho em 2025...</p>"
+      content: `
+        <p>O mercado de trabalho em 2025 continua sua trajetória de transformação acelerada, impulsionado principalmente pelos avanços tecnológicos e pelas mudanças nas dinâmicas econômicas globais. A adaptação a essas novas realidades e a requalificação profissional emergem como temas centrais para trabalhadores e empresas que buscam prosperar neste cenário dinâmico.</p>
+        <p>A demanda por habilidades digitais segue em alta, abrangendo desde competências básicas em ferramentas de produtividade até conhecimentos avançados em áreas como análise de dados, inteligência artificial, cibersegurança e desenvolvimento de software. Profissionais que investem no desenvolvimento contínuo dessas habilidades (upskilling e reskilling) tendem a ter mais oportunidades e maior valorização no mercado.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Impacto da Automação e Novas Profissões</h3>
+        <p>A automação de tarefas rotineiras, tanto em setores industriais quanto de serviços, continua a redefinir funções e a exigir que os trabalhadores se concentrem em atividades que demandam criatividade, pensamento crítico, resolução de problemas complexos e habilidades interpessoais. Ao mesmo tempo, novas profissões e especializações surgem, muitas delas na interseção entre tecnologia e áreas tradicionais.</p>
+        <p>O trabalho remoto e híbrido consolidou-se como uma modalidade importante, trazendo flexibilidade, mas também desafios relacionados à gestão de equipes distribuídas, cultura organizacional e bem-estar dos colaboradores. Empresas que conseguem equilibrar as vantagens do trabalho flexível com a manutenção do engajamento e da produtividade se destacam.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Foco em Soft Skills e Aprendizado Contínuo</h3>
+        <p>Além das competências técnicas (hard skills), as chamadas soft skills – como comunicação eficaz, colaboração, adaptabilidade, inteligência emocional e liderança – são cada vez mais valorizadas. A capacidade de aprender continuamente (lifelong learning) torna-se essencial, dado o ritmo acelerado das mudanças. Iniciativas de educação corporativa, plataformas de aprendizado online e programas de mentoria ganham relevância para apoiar os profissionais nessa jornada de desenvolvimento constante. O mercado de trabalho de 2025 exige proatividade, resiliência e uma mentalidade voltada para o crescimento e a inovação.</p>
+      `
     },
     6: {
       id: 6,
@@ -77,19 +110,27 @@ const NoticiaDetalhe = () => {
       category: "Entretenimento",
       author: "Fernando Lima",
       date: "10 Jun 2025",
-      content: "<p>Conteúdo detalhado sobre cultura pop em 2025...</p>"
+      content: `
+        <p>O ano de 2025 promete ser eletrizante para os fãs da cultura pop, com uma avalanche de grandes lançamentos programados para o cinema, música, games e streaming. As indústrias do entretenimento estão a todo vapor, preparando experiências imersivas e narrativas cativantes para um público cada vez mais exigente e conectado.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Cinema: Blockbusters e Obras Autorais</h3>
+        <p>Nas telonas, espera-se o retorno de franquias consagradas com novas sequências e reboots, além de filmes de super-heróis que prometem expandir seus universos cinematográficos. O cinema autoral também ganhará destaque, com diretores renomados apresentando obras originais em festivais internacionais e buscando espaço no circuito comercial. A tecnologia de projeção e som continuará evoluindo, oferecendo experiências cada vez mais imersivas nas salas de cinema.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Música: Novos Álbuns e Turnês Globais</h3>
+        <p>No cenário musical, grandes artistas internacionais e nacionais devem lançar álbuns aguardados, explorando novas sonoridades e colaborações. As turnês globais devem retornar com força total, levando shows espetaculares para estádios e arenas ao redor do mundo. O streaming continuará sendo a principal forma de consumo de música, com plataformas investindo em conteúdo exclusivo e ferramentas de descoberta personalizadas.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Games: Realismo e Mundos Virtuais</h3>
+        <p>A indústria de games não fica para trás, com o lançamento de títulos AAA (jogos de grande orçamento) que prometem gráficos ultrarrealistas, narrativas complexas e mundos virtuais expansivos. A realidade virtual (VR) e a realidade aumentada (AR) devem ganhar mais espaço, oferecendo novas formas de interação e imersão. Os eSports continuarão crescendo em popularidade, com campeonatos milionários e uma base de fãs cada vez maior.</p>
+        <h3 class="text-2xl font-semibold my-4 text-gray-800">Streaming: Séries Originais e Competição Acirrada</h3>
+        <p>As plataformas de streaming seguirão investindo pesado na produção de séries originais, minisséries e documentários, buscando atrair e reter assinantes em um mercado cada vez mais competitivo. A nostalgia continuará sendo uma forte tendência, com o resgate de clássicos e a produção de conteúdo baseado em propriedades intelectuais conhecidas. Em resumo, 2025 será um ano de muita diversão e entretenimento para todos os gostos.</p>
+      `
     }
   };
 
 
   useEffect(() => {
-    // Simular busca de dados da notícia
     const noticiaEncontrada = mockNewsData[id] || Object.values(mockNewsData).find(news => news.id === parseInt(id));
     
     if (noticiaEncontrada) {
       setNoticia(noticiaEncontrada);
     } else {
-      // Tratar caso de notícia não encontrada, talvez redirecionar ou mostrar mensagem
       console.error("Notícia não encontrada");
     }
   }, [id]);
@@ -97,14 +138,12 @@ const NoticiaDetalhe = () => {
   const handleShare = () => {
     toast({
       title: "🚧 Funcionalidade em desenvolvimento",
-      description: "O compartilhamento ainda não foi implementado—mas não se preocupe! Você pode solicitá-lo no seu próximo prompt! 🚀",
     });
   };
 
   const handleComment = () => {
      toast({
       title: "🚧 Funcionalidade em desenvolvimento",
-      description: "A seção de comentários ainda não foi implementada—mas não se preocupe! Você pode solicitá-la no seu próximo prompt! 🚀",
     });
   };
 
@@ -125,7 +164,6 @@ const NoticiaDetalhe = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-gray-100">
-      {/* Header da Notícia */}
       <section className="relative py-12 md:py-20 bg-gradient-to-r from-slate-800 to-slate-700">
         <div className="absolute inset-0">
           <img
@@ -176,7 +214,6 @@ const NoticiaDetalhe = () => {
         </div>
       </section>
 
-      {/* Conteúdo da Notícia */}
       <section className="py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-white shadow-xl rounded-lg">
           <article className="prose prose-lg lg:prose-xl max-w-none py-8 md:py-12 text-gray-700">
@@ -188,7 +225,6 @@ const NoticiaDetalhe = () => {
             />
           </article>
 
-          {/* Ações */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -207,7 +243,6 @@ const NoticiaDetalhe = () => {
         </div>
       </section>
 
-      {/* Notícias Relacionadas (Sugestão) */}
       <section className="py-12 bg-gray-50">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 
@@ -219,8 +254,8 @@ const NoticiaDetalhe = () => {
             Outras Notícias que Você Pode Gostar
           </motion.h2>
           <div className="text-center">
-            <Button onClick={() => toast({ title: "🚧 Em breve!", description: "Notícias relacionadas serão implementadas aqui."})} className="btn-secondary">
-              Ver Mais Sugestões (Em Breve)
+            <Button onClick={() => toast({ title: "🚧 Funcionalidade em desenvolvimento"})} className="btn-secondary">
+              Ver Mais Sugestões
             </Button>
           </div>
         </div>

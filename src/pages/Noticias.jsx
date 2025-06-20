@@ -15,61 +15,60 @@ const Noticias = () => {
   const categories = ['Todas', 'Política', 'Economia', 'Tecnologia', 'Esportes', 'Cultura', 'Meio Ambiente'];
 
   useEffect(() => {
-    // Simular carregamento de notícias
     const mockNews = [
       {
         id: 1,
-        title: "Inteligência Artificial revoluciona diagnósticos médicos",
-        excerpt: "Novos algoritmos de IA estão sendo implementados em hospitais brasileiros, aumentando a precisão dos diagnósticos em até 40%.",
-        image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+        title: "Tecnologia revoluciona o mercado brasileiro em 2025",
+        excerpt: "Novas tecnologias estão transformando diversos setores da economia nacional, criando oportunidades e desafios para empresas e trabalhadores.",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop",
         category: "Tecnologia",
-        author: "Dr. Pedro Lima",
-        date: "16 Jun 2024"
+        author: "Ana Silva",
+        date: "15 Jun 2025"
       },
       {
         id: 2,
-        title: "Nova lei de proteção de dados entra em vigor",
-        excerpt: "Empresas têm prazo até dezembro para se adequar às novas regras de proteção de dados pessoais dos consumidores.",
-        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&h=300&fit=crop",
-        category: "Política",
-        author: "Fernanda Costa",
-        date: "16 Jun 2024"
+        title: "Economia brasileira mostra sinais de recuperação em 2025",
+        excerpt: "Indicadores econômicos apontam para uma melhora gradual no cenário nacional, com destaque para o setor de serviços e indústria.",
+        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop",
+        category: "Economia",
+        author: "Carlos Santos",
+        date: "14 Jun 2025"
       },
       {
         id: 3,
-        title: "Mercado financeiro registra alta histórica",
-        excerpt: "Bolsa de valores atinge novo recorde, impulsionada pelo setor de tecnologia e commodities agrícolas.",
-        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop",
-        category: "Economia",
-        author: "Roberto Silva",
-        date: "15 Jun 2024"
+        title: "Sustentabilidade ganha força no país em 2025",
+        excerpt: "Empresas e governo investem em projetos sustentáveis, buscando reduzir o impacto ambiental e promover o desenvolvimento verde.",
+        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop",
+        category: "Meio Ambiente",
+        author: "Maria Oliveira",
+        date: "13 Jun 2025"
       },
       {
         id: 4,
-        title: "Seleção brasileira se prepara para próxima competição",
-        excerpt: "Técnico convoca novos talentos para fortalecer o time nacional em preparação para os próximos jogos internacionais.",
-        image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&h=300&fit=crop",
-        category: "Esportes",
-        author: "Lucas Martins",
-        date: "15 Jun 2024"
+        title: "Inovações em Inteligência Artificial para 2025",
+        excerpt: "Especialistas preveem grandes avanços na IA, impactando desde a medicina até o entretenimento.",
+        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&h=300&fit=crop",
+        category: "Tecnologia",
+        author: "Dr. Ricardo Alves",
+        date: "12 Jun 2025"
       },
       {
         id: 5,
-        title: "Festival de arte contemporânea movimenta São Paulo",
-        excerpt: "Evento reúne artistas nacionais e internacionais, apresentando as mais recentes tendências da arte contemporânea.",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
-        category: "Cultura",
-        author: "Marina Santos",
-        date: "14 Jun 2024"
+        title: "Desafios do mercado de trabalho em 2025",
+        excerpt: "Adaptação às novas tecnologias e requalificação profissional são temas centrais para o próximo ano.",
+        image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=300&fit=crop",
+        category: "Carreira",
+        author: "Juliana Costa",
+        date: "11 Jun 2025"
       },
       {
         id: 6,
-        title: "Projeto de reflorestamento ganha apoio internacional",
-        excerpt: "Iniciativa brasileira de preservação da Amazônia recebe investimento de organizações ambientais globais.",
-        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=300&fit=crop",
-        category: "Meio Ambiente",
-        author: "João Oliveira",
-        date: "14 Jun 2024"
+        title: "Cultura pop em 2025: O que esperar?",
+        excerpt: "Grandes lançamentos no cinema, música e games prometem agitar o cenário cultural no próximo ano.",
+        image: "https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=300&fit=crop",
+        category: "Entretenimento",
+        author: "Fernando Lima",
+        date: "10 Jun 2025"
       }
     ];
     
@@ -79,7 +78,6 @@ const Noticias = () => {
   const handleSearch = () => {
     toast({
       title: "🚧 Funcionalidade em desenvolvimento",
-      description: "A busca ainda não foi implementada—mas não se preocupe! Você pode solicitá-la no seu próximo prompt! 🚀",
     });
   };
 
@@ -87,7 +85,6 @@ const Noticias = () => {
     setSelectedCategory(category);
     toast({
       title: "🚧 Funcionalidade em desenvolvimento", 
-      description: "O filtro ainda não foi implementado—mas não se preocupe! Você pode solicitá-lo no seu próximo prompt! 🚀",
     });
   };
 
@@ -97,7 +94,6 @@ const Noticias = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-gray-50">
-      {/* Header */}
       <section className="gradient-bg py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.h1
@@ -118,11 +114,9 @@ const Noticias = () => {
         </div>
       </section>
 
-      {/* Search and Filter */}
       <section className="py-8 bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
-            {/* Search */}
             <div className="flex-1 max-w-md">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -142,7 +136,6 @@ const Noticias = () => {
               </div>
             </div>
 
-            {/* Categories */}
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <Button
@@ -163,7 +156,6 @@ const Noticias = () => {
         </div>
       </section>
 
-      {/* News Grid */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
