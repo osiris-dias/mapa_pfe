@@ -4,19 +4,19 @@ import { Newspaper, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 const Footer = () => {
   const socialLinks = [{
     icon: Facebook,
-    href: '#',
+    href: 'https://facebook.com/centraldenoticiasficticio',
     label: 'Facebook'
   }, {
     icon: Twitter,
-    href: '#',
+    href: 'https://twitter.com/centralnoticiasficticio',
     label: 'Twitter'
   }, {
     icon: Instagram,
-    href: '#',
+    href: 'https://instagram.com/centraldenoticiasficticio',
     label: 'Instagram'
   }, {
     icon: Youtube,
-    href: '#',
+    href: 'https://youtube.com/c/centraldenoticiasficticio',
     label: 'YouTube'
   }];
   return <footer className="bg-gray-900 text-white">
@@ -33,7 +33,7 @@ const Footer = () => {
               mais importantes do Brasil e do mundo com jornalismo de qualidade.
             </p>
             <div className="flex space-x-4">
-              {socialLinks.map((social, index) => <motion.a key={social.label} href={social.href} whileHover={{
+              {socialLinks.map((social, index) => <motion.a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" whileHover={{
               scale: 1.1
             }} whileTap={{
               scale: 0.95

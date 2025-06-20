@@ -12,7 +12,7 @@ const Noticias = () => {
   const [selectedCategory, setSelectedCategory] = useState('Todas');
   const { toast } = useToast();
 
-  const categories = ['Todas', 'Política', 'Economia', 'Tecnologia', 'Esportes', 'Cultura', 'Meio Ambiente'];
+  const categories = ['Todas', 'Economia', 'Tecnologia', 'Entretenimento', 'Meio Ambiente', 'Carreira'];
 
   useEffect(() => {
     const mockNews = [
@@ -83,9 +83,10 @@ const Noticias = () => {
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
-    toast({
-      title: "🚧 Funcionalidade em desenvolvimento", 
-    });
+    // A notificação de funcionalidade em desenvolvimento será removida daqui
+    // pois o filtro já está funcional.
+    // Se quiser adicionar uma notificação de sucesso, pode ser aqui.
+    // Ex: toast({ title: `Filtrando por: ${category}` });
   };
 
   const filteredNews = selectedCategory === 'Todas' 
@@ -148,7 +149,7 @@ const Noticias = () => {
                       : 'border-gray-300 text-gray-700 hover:bg-gray-50'
                   }`}
                 >
-                  {category}
+                  {category === 'Entretenimento' ? 'Cultura' : category}
                 </Button>
               ))}
             </div>
