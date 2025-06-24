@@ -57,11 +57,10 @@ const Home = () => {
     setFeaturedNews(mockNews);
   }, []);
   return <div className="pt-16">
-      {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center hero-pattern overflow-hidden">
         <div className="absolute inset-0">
            <img  alt="Fundo de notícias abstrato" className="absolute inset-0 w-full h-full object-cover opacity-30" src="https://images.unsplash.com/photo-1665624223976-b18dbd0fe817" />
-          <div className="absolute inset-0 bg-gradient-to-b from-purple-700/70 via-indigo-600/70 to-blue-500/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-800/70 via-stone-800/70 to-neutral-900/70"></div>
         </div>
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
           <motion.h1 initial={{
@@ -110,7 +109,6 @@ const Home = () => {
           </motion.div>
         </div>
         
-        {/* Floating Elements */}
         <div className="absolute top-10 left-5 floating-animation md:top-20 md:left-10">
           <div className="w-10 h-10 md:w-20 md:h-20 bg-white bg-opacity-10 rounded-full"></div>
         </div>
@@ -126,7 +124,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured News Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{
@@ -152,7 +149,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-16 gradient-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">

@@ -22,10 +22,9 @@ const Footer = () => {
   return <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo e Descrição */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Newspaper className="h-8 w-8 text-blue-400" />
+              <Newspaper className="h-8 w-8 text-amber-500" />
               <span className="text-xl font-bold">Central de Notícias</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -37,13 +36,12 @@ const Footer = () => {
               scale: 1.1
             }} whileTap={{
               scale: 0.95
-            }} className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-200" aria-label={social.label}>
+            }} className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-700 transition-colors duration-200" aria-label={social.label}>
                   <social.icon className="h-5 w-5" />
                 </motion.a>)}
             </div>
           </div>
 
-          {/* Links Rápidos */}
           <div>
             <span className="text-lg font-semibold mb-4 block">Links Rápidos</span>
             <ul className="space-y-2">
@@ -54,14 +52,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Categorias */}
           <div>
             <span className="text-lg font-semibold mb-4 block">Categorias</span>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Política</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Economia</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Tecnologia</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Esportes</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Cultura</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Meio Ambiente</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Carreira</a></li>
             </ul>
           </div>
         </div>

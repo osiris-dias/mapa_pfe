@@ -167,7 +167,7 @@ const NoticiaDetalhe = () => {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-            className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-4"
+            className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full mx-auto mb-4"
           ></motion.div>
           <p className="text-xl text-gray-700">Carregando notícia...</p>
         </div>
@@ -177,7 +177,7 @@ const NoticiaDetalhe = () => {
 
   return (
     <div className="pt-16 min-h-screen bg-gray-100">
-      <section className="relative py-12 md:py-20 bg-gradient-to-r from-slate-800 to-slate-700">
+      <section className="relative py-12 md:py-20 bg-gradient-to-r from-stone-800 to-stone-900">
         <div className="absolute inset-0">
           <img
             src={noticia.image}
@@ -193,7 +193,7 @@ const NoticiaDetalhe = () => {
             transition={{ duration: 0.5 }}
             className="mb-4"
           >
-            <Link to="/noticias" className="inline-flex items-center text-blue-300 hover:text-blue-100 transition-colors">
+            <Link to="/noticias" className="inline-flex items-center text-amber-300 hover:text-amber-100 transition-colors">
               <ArrowLeft className="h-5 w-5 mr-2" />
               Voltar para Notícias
             </Link>
@@ -220,7 +220,7 @@ const NoticiaDetalhe = () => {
               <Calendar className="h-5 w-5 mr-2" />
               <span>{noticia.date}</span>
             </div>
-            <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+            <span className="bg-amber-700 text-white px-3 py-1 rounded-full text-xs font-semibold">
               {noticia.category}
             </span>
           </motion.div>

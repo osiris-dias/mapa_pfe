@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -22,7 +21,7 @@ const NewsCard = ({ news, index }) => {
           />
         </Link>
         <div className="absolute top-4 left-4">
-          <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+          <span className="bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-medium">
             {news.category}
           </span>
         </div>
@@ -30,7 +29,7 @@ const NewsCard = ({ news, index }) => {
       
       <div className="p-6 flex flex-col flex-grow">
         <Link to={`/noticias/${news.id}`}>
-          <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-blue-600 transition-colors">
+          <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-amber-700 transition-colors">
             {news.title}
           </h2>
         </Link>
